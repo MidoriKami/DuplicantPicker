@@ -13,7 +13,7 @@ def ProcessDuplicant(x1, y1, x2, y2, c1, c2):
     gastrophobia = imagesearcharea("Gastrophobia.png", x1, y1, x2, y2)
     pacifist = imagesearcharea("Pacifist.png", x1, y1, x2, y2)
 
-    while ((( ImageFound(divers)  and  (ImageFound(gastrophobia) or ImageFound(pacifist)) ) == False ) and counter < 500 ):
+    while ((( ImageFound(divers)  and  (ImageFound(gastrophobia) or ImageFound(pacifist)) ) == False ) and counter < 100 ):
         pyautogui.click(c1, c2)
         counter += 1
         divers = imagesearcharea("DiversLungs.png", x1, y1, x2, y2)
